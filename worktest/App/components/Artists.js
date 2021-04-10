@@ -41,8 +41,6 @@ export default function Artists(props) {
                                                 <Text style={styles.text}>
                                                     <Text style={styles.subtitles}>Streamable: </Text> {item.streamable}</Text>
                                             </View>
-                                            
-                                            
                                         </View>
                    
             }
