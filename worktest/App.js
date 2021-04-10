@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {ScrollView, StyleSheet } from 'react-native';
+import {View, StyleSheet } from 'react-native';
 
 import Loading from "./App/components/Loading";
 import Artists from "./App/components/Artists";
@@ -18,9 +18,9 @@ export default function App() {
   }, []);
 
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       {isLoading ? <Loading/> : <Artists data={data} />}
-    </ScrollView>
+    </View>
   );
 }
 
